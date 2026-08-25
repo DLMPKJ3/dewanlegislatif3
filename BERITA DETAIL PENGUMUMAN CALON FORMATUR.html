@@ -1,428 +1,86 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta
         name="description"
-        content="Pengumuman calon formatur yang lolos tahap pemberkasan Open Recruitment DLM Poltekkes Kemenkes Jakarta III Periode 2026."
+        content="Website resmi Dewan Legislatif Mahasiswa Poltekkes Kemenkes Jakarta III."
     >
 
-    <title>
-        Pengumuman Calon Formatur Lolos Pemberkasan | DLM PKJ III
-    </title>
+    <title>DLM Poltekkes Kemenkes Jakarta III</title>
 
-
-    <!-- =========================
-         GOOGLE FONT
-    ========================== -->
-
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-    >
-
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet"
     >
 
-
-    <!-- =========================
-         FONT AWESOME
-    ========================== -->
-
+    <!-- Font Awesome -->
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     >
 
-
-    <!-- =========================
-         MAIN CSS
-    ========================== -->
-
-    <link
-        rel="stylesheet"
-        href="styles.css"
-    >
-
-
-    <!-- =========================
-         TAMBAHAN CSS
-         KHUSUS PENGUMUMAN
-    ========================== -->
-
-    <style>
-
-        /* =========================================
-           DAFTAR CALON FORMATUR
-        ========================================= */
-
-        .formatur-intro {
-            margin-bottom: 2.5rem;
-        }
-
-
-        .announcement-box {
-            background:
-                linear-gradient(
-                    135deg,
-                    rgba(126, 20, 20, 0.08),
-                    rgba(255, 255, 255, 0.02)
-                );
-
-            border-left: 4px solid #8f1717;
-
-            padding: 1.4rem 1.5rem;
-
-            border-radius: 0 14px 14px 0;
-
-            margin: 2rem 0;
-
-            line-height: 1.8;
-        }
-
-
-        .announcement-box strong {
-            color: #8f1717;
-        }
-
-
-        /* =========================================
-           SECTION JURUSAN
-        ========================================= */
-
-        .jurusan-section {
-            margin-top: 3rem;
-        }
-
-
-        .jurusan-title {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-
-            margin-bottom: 1.2rem;
-
-            padding-bottom: 0.9rem;
-
-            border-bottom: 1px solid rgba(0,0,0,0.08);
-        }
-
-
-        .jurusan-icon {
-            width: 48px;
-            height: 48px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            border-radius: 12px;
-
-            background: rgba(143, 23, 23, 0.10);
-
-            color: #8f1717;
-
-            font-size: 1.15rem;
-
-            flex-shrink: 0;
-        }
-
-
-        .jurusan-title h3 {
-            margin: 0;
-
-            font-size: 1.25rem;
-
-            color: #222;
-        }
-
-
-        .jurusan-title span {
-            display: block;
-
-            margin-top: 0.15rem;
-
-            font-size: 0.78rem;
-
-            color: #888;
-
-            text-transform: uppercase;
-
-            letter-spacing: 0.08em;
-        }
-
-
-        /* =========================================
-           CARD NAMA PESERTA
-        ========================================= */
-
-        .formatur-list {
-            display: grid;
-
-            grid-template-columns:
-                repeat(2, minmax(0, 1fr));
-
-            gap: 0.85rem;
-
-            margin-bottom: 2.5rem;
-        }
-
-
-        .formatur-item {
-            display: flex;
-
-            align-items: center;
-
-            gap: 0.9rem;
-
-            padding: 1rem 1.1rem;
-
-            background: #fff;
-
-            border: 1px solid rgba(0,0,0,0.07);
-
-            border-radius: 12px;
-
-            box-shadow:
-                0 5px 20px rgba(0,0,0,0.04);
-
-            transition:
-                transform 0.3s ease,
-                box-shadow 0.3s ease,
-                border-color 0.3s ease;
-        }
-
-
-        .formatur-item:hover {
-            transform: translateY(-4px);
-
-            border-color:
-                rgba(143, 23, 23, 0.25);
-
-            box-shadow:
-                0 10px 25px rgba(0,0,0,0.08);
-        }
-
-
-        .formatur-number {
-            width: 34px;
-            height: 34px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            border-radius: 50%;
-
-            background: #8f1717;
-
-            color: #fff;
-
-            font-size: 0.78rem;
-
-            font-weight: 700;
-
-            flex-shrink: 0;
-        }
-
-
-        .formatur-name {
-            font-weight: 600;
-
-            color: #272727;
-
-            line-height: 1.4;
-        }
-
-
-        .formatur-status {
-            display: inline-flex;
-
-            align-items: center;
-
-            gap: 0.3rem;
-
-            margin-top: 0.25rem;
-
-            font-size: 0.7rem;
-
-            color: #777;
-        }
-
-
-        .formatur-status i {
-            color: #2e9b5b;
-        }
-
-
-        /* =========================================
-           HIGHLIGHT PENGUMUMAN
-        ========================================= */
-
-        .announcement-final {
-            margin-top: 3rem;
-
-            padding: 1.5rem;
-
-            border-radius: 16px;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #8f1717,
-                    #5f0d0d
-                );
-
-            color: #fff;
-
-            text-align: center;
-
-            box-shadow:
-                0 15px 35px rgba(95, 13, 13, 0.20);
-        }
-
-
-        .announcement-final i {
-            font-size: 1.8rem;
-
-            margin-bottom: 0.7rem;
-        }
-
-
-        .announcement-final h3 {
-            margin: 0 0 0.5rem;
-
-            color: #fff;
-        }
-
-
-        .announcement-final p {
-            margin: 0;
-
-            color: rgba(255,255,255,0.85);
-
-            line-height: 1.7;
-        }
-
-
-        /* =========================================
-           RESPONSIVE
-        ========================================= */
-
-        @media (max-width: 700px) {
-
-            .formatur-list {
-                grid-template-columns: 1fr;
-            }
-
-            .jurusan-title h3 {
-                font-size: 1.1rem;
-            }
-
-        }
-
-    </style>
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 
 <body>
 
-
-<!-- =====================================================
-     NAVBAR
-===================================================== -->
+<!-- ================= NAVBAR ================= -->
 
 <nav class="navbar">
 
     <div class="navbar-container">
 
-
-        <!-- LOGO -->
-
-        <a
-            href="index.html"
-            class="navbar-logo"
-        >
+        <a href="index.html" class="navbar-logo">
 
             <img
-                src="LOGO.PNG"
+                src="LOGO.png"
                 alt="Logo Dewan Legislatif Mahasiswa"
             >
 
             <div class="logo-text">
-
-                <strong>
-                    DLM PKJ III
-                </strong>
-
-                <span>
-                    Dewan Legislatif Mahasiswa
-                </span>
-
+                <strong>DLM PKJ III</strong>
+                <span>Dewan Legislatif Mahasiswa</span>
             </div>
 
         </a>
 
 
-        <!-- MOBILE MENU -->
+        <!-- Mobile Menu Button -->
 
         <button
             class="menu-toggle"
             id="menuToggle"
             aria-label="Buka menu"
         >
-
             <i class="fas fa-bars"></i>
-
         </button>
 
 
-        <!-- MENU -->
+        <!-- Navigation -->
 
-        <ul
-            class="navbar-menu"
-            id="navbarMenu"
-        >
+        <ul class="navbar-menu" id="navbarMenu">
 
             <li>
-
-                <a href="index.html">
+                <a href="index.html" class="active">
                     Beranda
                 </a>
-
             </li>
 
 
             <li class="has-dropdown">
 
-                <a
-                    href="#"
-                    class="dropdown-toggle"
-                >
-
+                <a href="#" class="dropdown-toggle">
                     Tentang Kami
-
                     <i class="fas fa-chevron-down"></i>
-
                 </a>
-
 
                 <ul class="dropdown">
 
@@ -468,37 +126,25 @@
 
 
             <li>
-
                 <a href="produk hukum.html">
                     Produk Hukum
                 </a>
-
             </li>
 
 
             <li>
-
-                <a
-                    href="berita.html"
-                    class="active"
-                >
+                <a href="berita.html">
                     Berita
                 </a>
-
             </li>
 
 
-            <li class="nav-aspirasi">
-
-                <a href="index.html#aspirasi">
-
-                    <i class="fas fa-bullhorn"></i>
-
-                    Aspirasi
-
-                </a>
-
-            </li>
+<li class="nav-aspirasi">
+    <a href="aspirasi.html">
+        <i class="fas fa-bullhorn"></i>
+        Aspirasi
+    </a>
+</li>
 
         </ul>
 
@@ -507,65 +153,130 @@
 </nav>
 
 
+<!-- ================= HERO ================= -->
 
-<!-- =====================================================
-     MAIN
-===================================================== -->
+<header class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <span class="hero-label">
+            WEBSITE RESMI
+        </span>
+
+        <h1>
+            Dewan Legislatif Mahasiswa
+            <span>Poltekkes Kemenkes Jakarta III</span>
+        </h1>
+
+        <p>
+            Ruang informasi, legislasi, pengawasan,
+            dan aspirasi mahasiswa.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#tentang" class="btn btn-primary">
+                <i class="fas fa-arrow-down"></i>
+                Jelajahi Website
+            </a>
+
+            <a href="#aspirasi" class="btn btn-outline">
+                <i class="fas fa-bullhorn"></i>
+                Sampaikan Aspirasi
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-scroll">
+        <span>Scroll untuk menjelajahi</span>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+
+</header>
+
+
+<!-- ================= MAIN ================= -->
 
 <main>
 
+    <!-- INTRODUCTION -->
 
-    <!-- =================================================
-         ARTICLE HERO
-    ================================================== -->
+    <section class="section introduction" id="tentang">
 
-    <section class="article-hero">
+        <div class="section-heading reveal">
 
-        <div class="article-hero-content">
-
-
-            <!-- CATEGORY -->
-
-            <span class="article-category">
-
-                <i class="fas fa-bullhorn"></i>
-
-                PENGUMUMAN
-
+            <span class="section-label">
+                TENTANG DLM
             </span>
 
+            <h2>
+                Selamat Datang di Website Resmi
+                <span>Dewan Legislatif Mahasiswa</span>
+            </h2>
 
-            <!-- TITLE -->
+            <div class="heading-line"></div>
 
-            <h1>
-
-                Pengumuman Calon Formatur
-                yang Lolos Tahap Pemberkasan
-                Open Recruitment DLM 2026
-
-            </h1>
+        </div>
 
 
-            <!-- META -->
+        <div class="intro-grid">
 
-            <div class="article-meta">
+            <div class="intro-text reveal">
 
-                <span>
+                <p>
+                    Website ini dibuat sebagai pusat informasi resmi
+                    Dewan Legislatif Mahasiswa Poltekkes Kemenkes
+                    Jakarta III.
+                </p>
 
-                    <i class="far fa-calendar"></i>
+                <p>
+                    Di sini kamu dapat menemukan berbagai informasi
+                    mengenai DLM, mulai dari struktur organisasi,
+                    kegiatan, produk hukum, hasil sidang, hingga
+                    berbagai pembaruan penting lainnya.
+                </p>
 
-                    2026
+                <p>
+                    Kami juga menyediakan ruang untuk menyampaikan
+                    aspirasi agar suara mahasiswa dapat didengar,
+                    dikaji, dan diperjuangkan bersama.
+                </p>
 
-                </span>
+                <p class="highlight-text">
+                    Mari wujudkan lembaga legislatif mahasiswa
+                    yang aktif, terbuka, dan berpihak pada mahasiswa.
+                </p>
+
+                <div class="viva">
+                    Viva Legislativa!
+                </div>
+
+            </div>
 
 
-                <span>
+            <div class="intro-card reveal">
 
-                    <i class="far fa-user"></i>
+                <div class="intro-card-icon">
+                    <i class="fas fa-landmark"></i>
+                </div>
 
-                    Ditulis oleh Admin
+                <h3>
+                    DLM PKJ III
+                </h3>
 
-                </span>
+                <p>
+                    Representasi mahasiswa dalam menjalankan
+                    fungsi legislasi, pengawasan, budgeting, dan advokasi.
+                </p>
+
+                <a href="BPH.html" class="text-link">
+                    Kenali Struktur Kami
+                    <i class="fas fa-arrow-right"></i>
+                </a>
 
             </div>
 
@@ -574,1528 +285,202 @@
     </section>
 
 
+    <!-- VISI MISI -->
 
-    <!-- =================================================
-         ARTICLE
-    ================================================== -->
+    <section class="section vision-section">
 
-    <section class="article-section">
+        <div class="section-heading reveal">
 
-        <div class="article-layout">
-
-
-            <!-- =============================
-                 ARTICLE CONTENT
-            ============================== -->
-
-            <article class="article-card">
-
-
-                <!-- BACK -->
-
-                <a
-                    href="berita.html"
-                    class="article-back"
-                >
-
-                    <i class="fas fa-arrow-left"></i>
-
-                    Kembali ke Daftar Berita
-
-                </a>
-
-
-
-                <!-- IMAGE -->
-
-                <figure class="article-featured-image">
-
-                    <!-- GANTI DENGAN COVER BERITA KAMU -->
-
-                    <img
-                        src="fotoberita/berita12.PNG"
-                        alt="Pengumuman calon formatur Open Recruitment DLM 2026"
-                    >
-
-                    <figcaption>
-
-                        Pengumuman Calon Formatur
-                        yang Lolos Tahap Pemberkasan
-                        Open Recruitment DLM 2026.
-
-                    </figcaption>
-
-                </figure>
-
-
-
-                <!-- CONTENT -->
-
-                <div class="article-content">
-
-
-                    <!-- PEMBUKA -->
-
-                    <div class="formatur-intro">
-
-                        <p>
-
-                            Dewan Legislatif Mahasiswa
-                            Poltekkes Kemenkes Jakarta III
-                            dengan ini mengumumkan hasil
-                            <strong>tahap pemberkasan Open Recruitment
-                            Calon Formatur DLM 2026.</strong>
-
-                        </p>
-
-
-                        <p>
-
-                            Setelah melalui proses pemeriksaan
-                            dan verifikasi berkas pendaftaran,
-                            calon formatur yang dinyatakan
-                            <strong>lolos tahap pemberkasan</strong>
-                            adalah peserta yang tercantum
-                            berdasarkan jurusan berikut.
-
-                        </p>
-
-
-                        <div class="announcement-box">
-
-                            <strong>
-                                <i class="fas fa-circle-info"></i>
-                                Informasi Penting
-                            </strong>
-
-                            <br>
-
-                            Nama-nama yang tercantum di bawah
-                            merupakan calon formatur yang
-                            dinyatakan <strong>lolos tahap
-                            pemberkasan</strong> dan berhak
-                            mengikuti tahapan seleksi selanjutnya
-                            sesuai dengan ketentuan Open Recruitment
-                            DLM 2026.
-
-                        </div>
-
-                    </div>
-
-
-
-                    <!-- =================================================
-                         JURUSAN 1
-                    ================================================== -->
-
-                    <section class="jurusan-section">
-
-                        <div class="jurusan-title">
-
-                            <div class="jurusan-icon">
-
-                                <i class="fas fa-person-pregnant"></i>
-
-                            </div>
-
-                            <div>
-
-                                <span>
-                                    Jurusan
-                                </span>
-
-                                <h3>
-                                    Kebidanan
-                                </h3>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="formatur-list">
-
-
-                            <!-- NAMA 1 -->
-
-                            <div class="formatur-item">
-
-                                <span class="formatur-number">
-                                    01
-                                </span>
-
-                                <div>
-
-                                    <div class="formatur-name">
-                                        Izma Rupadi Adliah (D3)
-                                    </div>
-
-                                    <span class="formatur-status">
-
-                                        <i class="fas fa-circle-check"></i>
-
-                                        Lolos Pemberkasan
-
-                                    </span>
-
-                                </div>
-
-                            </div>
-
-
-                            <!-- NAMA 2 -->
-
-                            <div class="formatur-item">
-
-                                <span class="formatur-number">
-                                    02
-                                </span>
-
-                                <div>
-
-                                    <div class="formatur-name">
-                                         Sulistya Wulandari (D3)
-                                    </div>
-
-                                    <span class="formatur-status">
-
-                                        <i class="fas fa-circle-check"></i>
-
-                                        Lolos Pemberkasan
-
-                                    </span>
-
-                                </div>
-
-                            </div>
-							
-							                            <!-- NAMA 3 -->
-
-                            <div class="formatur-item">
-
-                                <span class="formatur-number">
-                                    03
-                                </span>
-
-                                <div>
-
-                                    <div class="formatur-name">
-                                        Leila Najmi Mariani (D4)
-                                    </div>
-
-                                    <span class="formatur-status">
-
-                                        <i class="fas fa-circle-check"></i>
-
-                                        Lolos Pemberkasan
-
-                                    </span>
-
-                                </div>
-
-                            </div>
-							
-							                            <!-- NAMA 4 -->
-
-                            <div class="formatur-item">
-
-                                <span class="formatur-number">
-                                    04
-                                </span>
-
-                                <div>
-
-                                    <div class="formatur-name">
-                                        Lia Bonesya (D4)
-                                    </div>
-
-                                    <span class="formatur-status">
-
-                                        <i class="fas fa-circle-check"></i>
-
-                                        Lolos Pemberkasan
-
-                                    </span>
-
-                                </div>
-
-                            </div>
-							
-							                            <!-- NAMA 5 -->
-
-                            <div class="formatur-item">
-
-                                <span class="formatur-number">
-                                    05
-                                </span>
-
-                                <div>
-
-                                    <div class="formatur-name">
-                                        Nafiysah (D4)
-                                    </div>
-
-                                    <span class="formatur-status">
-
-                                        <i class="fas fa-circle-check"></i>
-
-                                        Lolos Pemberkasan
-
-                                    </span>
-
-                                </div>
-
-                            </div>
-							
-							                            <!-- NAMA 6 -->
-
-                            <div class="formatur-item">
-
-                                <span class="formatur-number">
-                                    06
-                                </span>
-
-                                <div>
-
-                                    <div class="formatur-name">
-                                       Anisa Nuraini (D4)
-                                    </div>
-
-                                    <span class="formatur-status">
-
-                                        <i class="fas fa-circle-check"></i>
-
-                                        Lolos Pemberkasan
-
-                                    </span>
-
-                                </div>
-
-                            </div>
-							
-							                            <!-- NAMA 7 -->
-
-                            <div class="formatur-item">
-
-                                <span class="formatur-number">
-                                    07
-                                </span>
-
-                                <div>
-
-                                    <div class="formatur-name">
-                                        Dwi Amanda Nuha Mahirah (D4)
-                                    </div>
-
-                                    <span class="formatur-status">
-
-                                        <i class="fas fa-circle-check"></i>
-
-                                        Lolos Pemberkasan
-
-                                    </span>
-
-                                </div>
-
-                            </div>
-
-
-                        </div>
-
-                    </section>
-
-
-
-                  <!-- =================================================
-     JURUSAN 2 — PROMOSI KESEHATAN
-================================================== -->
-
-<section class="jurusan-section">
-
-    <div class="jurusan-title">
-
-        <div class="jurusan-icon">
-            <i class="fas fa-heart-pulse"></i>
-        </div>
-
-        <div>
-
-            <span>
-                Jurusan
+            <span class="section-label">
+                LANDASAN ORGANISASI
             </span>
 
-            <h3>
-                Promosi Kesehatan
-            </h3>
+            <h2>
+                Visi & Misi
+            </h2>
+
+            <div class="heading-line"></div>
 
         </div>
 
-    </div>
 
+        <div class="vision-grid">
 
-    <div class="formatur-list">
+            <!-- VISI -->
 
-        <div class="formatur-item">
-            <span class="formatur-number">01</span>
-            <div>
-                <div class="formatur-name">
-                    Cahaya Arifah Zain <span>(D4)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
+            <article class="vision-card reveal">
 
-
-        <div class="formatur-item">
-            <span class="formatur-number">02</span>
-            <div>
-                <div class="formatur-name">
-                    Jihan Leisanny <span>(D4)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-
-        <div class="formatur-item">
-            <span class="formatur-number">03</span>
-            <div>
-                <div class="formatur-name">
-                    Rizkia Salwa Latifa <span>(D4)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-
-        <div class="formatur-item">
-            <span class="formatur-number">04</span>
-            <div>
-                <div class="formatur-name">
-                    Arimbi Asyifa Kinanti <span>(D4)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-
-        <div class="formatur-item">
-            <span class="formatur-number">05</span>
-            <div>
-                <div class="formatur-name">
-                    Sekar Rahmaningrum <span>(D4)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-
-        <div class="formatur-item">
-            <span class="formatur-number">06</span>
-            <div>
-                <div class="formatur-name">
-                    Khaira Ayumarya Febrina John <span>(D4)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-
-        <div class="formatur-item">
-            <span class="formatur-number">07</span>
-            <div>
-                <div class="formatur-name">
-                    Malika Faiza As Shabro <span>(D4)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-
-        <div class="formatur-item">
-            <span class="formatur-number">08</span>
-            <div>
-                <div class="formatur-name">
-                    Kanayya Humairra Soewandy <span>(D4)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-
-        <div class="formatur-item">
-            <span class="formatur-number">09</span>
-            <div>
-                <div class="formatur-name">
-                    Angreani Pramiswari Maulida <span>(D4)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-
-        <div class="formatur-item">
-            <span class="formatur-number">10</span>
-            <div>
-                <div class="formatur-name">
-                    Isprisya Zahwa Hersyami Aulia <span>(D4)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =================================================
-     JURUSAN 3 — TLM
-================================================== -->
-
-<section class="jurusan-section">
-
-    <div class="jurusan-title">
-
-        <div class="jurusan-icon">
-            <i class="fas fa-microscope"></i>
-        </div>
-
-        <div>
-
-            <span>
-                Jurusan
-            </span>
-
-            <h3>
-                Teknologi Laboratorium Medis
-            </h3>
-
-        </div>
-
-    </div>
-
-
-    <div class="formatur-list">
-
-        <div class="formatur-item">
-            <span class="formatur-number">01</span>
-            <div>
-                <div class="formatur-name">
-                    Atha Ramaniya <span>(D3)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-
-        <div class="formatur-item">
-            <span class="formatur-number">02</span>
-            <div>
-                <div class="formatur-name">
-                    Salwa Salsabila Ramadhani <span>(D3)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-
-        <div class="formatur-item">
-            <span class="formatur-number">03</span>
-            <div>
-                <div class="formatur-name">
-                    Naurah Manda Rofilah <span>(D3)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-
-        <div class="formatur-item">
-            <span class="formatur-number">04</span>
-            <div>
-                <div class="formatur-name">
-                    Hexadelyo Dzakwan W.R <span>(D3)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-
-        <div class="formatur-item">
-            <span class="formatur-number">05</span>
-            <div>
-                <div class="formatur-name">
-                    Alika Kazna Aprilia <span>(D4)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-
-        <div class="formatur-item">
-            <span class="formatur-number">06</span>
-            <div>
-                <div class="formatur-name">
-                    Anabela Aisyah Nurdina <span>(D4)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-
-        <div class="formatur-item">
-            <span class="formatur-number">07</span>
-            <div>
-                <div class="formatur-name">
-                    Azza Hanifah Parameswari <span>(D4)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-
-        <div class="formatur-item">
-            <span class="formatur-number">08</span>
-            <div>
-                <div class="formatur-name">
-                    Chelsea Ayulia Kinantan <span>(D4)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-
-        <div class="formatur-item">
-            <span class="formatur-number">09</span>
-            <div>
-                <div class="formatur-name">
-                    Fikri Atstsaqif <span>(D4)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-
-        <div class="formatur-item">
-            <span class="formatur-number">10</span>
-            <div>
-                <div class="formatur-name">
-                    Luna Nur Shafira <span>(D4)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-
-        <div class="formatur-item">
-            <span class="formatur-number">11</span>
-            <div>
-                <div class="formatur-name">
-                    Satria Pratama <span>(D4)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-
-        <div class="formatur-item">
-            <span class="formatur-number">12</span>
-            <div>
-                <div class="formatur-name">
-                    Rahmathul Dilva <span>(D4)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-
-        <div class="formatur-item">
-            <span class="formatur-number">13</span>
-            <div>
-                <div class="formatur-name">
-                    Ramadhan Putra Irawan <span>(D4)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-
-        <div class="formatur-item">
-            <span class="formatur-number">14</span>
-            <div>
-                <div class="formatur-name">
-                    Camillo Reginald Wardoyo <span>(D4)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- =================================================
-     JURUSAN 4 — FISIOTERAPI
-================================================== -->
-
-<section class="jurusan-section">
-
-    <div class="jurusan-title">
-
-        <div class="jurusan-icon">
-            <i class="fas fa-person-walking"></i>
-        </div>
-
-        <div>
-
-            <span>
-                Jurusan
-            </span>
-
-            <h3>
-                Fisioterapi
-            </h3>
-
-        </div>
-
-    </div>
-
-
-    <div class="formatur-list">
-
-        <div class="formatur-item">
-            <span class="formatur-number">01</span>
-            <div>
-                <div class="formatur-name">
-                    Rowiena Fatihah Larasati <span>(D4)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-
-        <div class="formatur-item">
-            <span class="formatur-number">02</span>
-            <div>
-                <div class="formatur-name">
-                    Dinda Puspa Ayu Ramadhani <span>(D4)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-
-        <div class="formatur-item">
-            <span class="formatur-number">03</span>
-            <div>
-                <div class="formatur-name">
-                    Kayla Lyana Nafisha <span>(D4)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-
-        <div class="formatur-item">
-            <span class="formatur-number">04</span>
-            <div>
-                <div class="formatur-name">
-                    Nadhifa Rhysnanda Azalia Putri <span>(D4)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-
-        <div class="formatur-item">
-            <span class="formatur-number">05</span>
-            <div>
-                <div class="formatur-name">
-                    Ranaisya Eka Oktariani <span>(D4)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-
-        <div class="formatur-item">
-            <span class="formatur-number">06</span>
-            <div>
-                <div class="formatur-name">
-                    Nadhif Azka Zaki <span>(D4)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-
-        <div class="formatur-item">
-            <span class="formatur-number">07</span>
-            <div>
-                <div class="formatur-name">
-                    Muhammad Fadhil Ramadhan <span>(D4)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-
-        <div class="formatur-item">
-            <span class="formatur-number">08</span>
-            <div>
-                <div class="formatur-name">
-                    Fairuz Ramadhan Nasution <span>(D4)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-
-        <div class="formatur-item">
-            <span class="formatur-number">09</span>
-            <div>
-                <div class="formatur-name">
-                    Igreya Navira Dwi Anandarini <span>(D4)</span>
-                </div>
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-                  <!-- =================================================
-     JURUSAN 5 — KEPERAWATAN
-================================================== -->
-
-<section class="jurusan-section">
-
-    <div class="jurusan-title">
-
-        <div class="jurusan-icon">
-            <i class="fas fa-user-nurse"></i>
-        </div>
-
-        <div>
-
-            <span>
-                Jurusan
-            </span>
-
-            <h3>
-                Keperawatan
-            </h3>
-
-        </div>
-
-    </div>
-
-
-    <div class="formatur-list">
-
-        <!-- 01 -->
-        <div class="formatur-item">
-
-            <span class="formatur-number">01</span>
-
-            <div>
-
-                <div class="formatur-name">
-                    Gadiza Aulia Rahmani <span>(D3) (KI)</span>
+                <div class="vision-number">
+                    01
                 </div>
 
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-
-            </div>
-
-        </div>
-
-
-        <!-- 02 -->
-        <div class="formatur-item">
-
-            <span class="formatur-number">02</span>
-
-            <div>
-
-                <div class="formatur-name">
-                    Alnura Rifqah Nandira Fikri <span>(D4) (KI)</span>
+                <div class="vision-icon">
+                    <i class="fas fa-eye"></i>
                 </div>
 
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-
-            </div>
-
-        </div>
-
-
-        <!-- 03 -->
-        <div class="formatur-item">
-
-            <span class="formatur-number">03</span>
-
-            <div>
-
-                <div class="formatur-name">
-                    Syabilla Nur Azzahra <span>(D4) (KI)</span>
-                </div>
-
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-
-            </div>
-
-        </div>
-
-
-        <!-- 04 -->
-        <div class="formatur-item">
-
-            <span class="formatur-number">04</span>
-
-            <div>
-
-                <div class="formatur-name">
-                    Tazkiyah Nasyah Tenri Vesile <span>(D4) (KI)</span>
-                </div>
-
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-
-            </div>
-
-        </div>
-
-
-        <!-- 05 -->
-        <div class="formatur-item">
-
-            <span class="formatur-number">05</span>
-
-            <div>
-
-                <div class="formatur-name">
-                    El-Hafidz Azhar <span>(D4)</span>
-                </div>
-
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-
-            </div>
-
-        </div>
-
-
-        <!-- 06 -->
-        <div class="formatur-item">
-
-            <span class="formatur-number">06</span>
-
-            <div>
-
-                <div class="formatur-name">
-                    Mardhiyah Atsabitah <span>(D4)</span>
-                </div>
-
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-
-            </div>
-
-        </div>
-
-
-        <!-- 07 -->
-        <div class="formatur-item">
-
-            <span class="formatur-number">07</span>
-
-            <div>
-
-                <div class="formatur-name">
-                    Septia Luvyanti <span>(D4)</span>
-                </div>
-
-                <span class="formatur-status">
-                    <i class="fas fa-circle-check"></i>
-                    Lolos Pemberkasan
-                </span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-                    <!-- =================================================
-                         PENUTUP
-                    ================================================== -->
-
-                    <div class="announcement-final">
-
-                        <i class="fas fa-flag"></i>
-
-                        <h3>
-                            Selamat kepada Calon Formatur
-                        </h3>
-
-                        <p>
-
-                            Selamat kepada seluruh calon formatur
-                            yang telah dinyatakan lolos tahap
-                            pemberkasan. Persiapkan diri untuk
-                            mengikuti tahapan selanjutnya dalam
-                            rangkaian Open Recruitment DLM 2026.
-
-                        </p>
-
-                    </div>
-
-
-
-                </div>
-
-
-
-                <!-- ARTICLE FOOTER -->
-
-                <div class="article-footer">
-
-                    <div class="article-share-label">
-
-                        <i class="fas fa-share-alt"></i>
-
-                        Bagikan Pengumuman
-
-                    </div>
-
-
-                    <div class="article-share">
-
-                        <a
-                            href="https://www.instagram.com/dlmpkj3"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            title="Instagram"
-                        >
-
-                            <i class="fab fa-instagram"></i>
-
-                        </a>
-
-
-                        <a
-                            href="mailto:dlm.pkj3@gmail.com"
-                            title="Email"
-                        >
-
-                            <i class="fas fa-envelope"></i>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
+                <h3>
+                    Visi
+                </h3>
+
+                <p>
+                    Terwujudnya Dewan Legislatif Mahasiswa
+                    yang <strong>ADIL</strong>:
+                    pro-Aktif, Demokratis, Integritas,
+                    dan Legalistik.
+                </p>
 
             </article>
 
 
+            <!-- MISI -->
 
-            <!-- =============================
-                 SIDEBAR
-            ============================== -->
+            <article class="vision-card mission-card reveal">
 
-            <aside class="article-sidebar">
-
-
-                <!-- INFO CARD -->
-
-                <div class="article-info-card">
-
-                    <span class="section-label">
-
-                        INFORMASI
-
-                    </span>
-
-
-                    <h3>
-
-                        Tentang Pengumuman
-
-                    </h3>
-
-
-                    <div class="info-item">
-
-                        <i class="far fa-calendar"></i>
-
-                        <div>
-
-                            <small>
-                                Tahun
-                            </small>
-
-                            <strong>
-                                2026
-                            </strong>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="info-item">
-
-                        <i class="far fa-user"></i>
-
-                        <div>
-
-                            <small>
-                                Penulis
-                            </small>
-
-                            <strong>
-                                Admin DLM
-                            </strong>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="info-item">
-
-                        <i class="fas fa-tag"></i>
-
-                        <div>
-
-                            <small>
-                                Kategori
-                            </small>
-
-                            <strong>
-                                Pengumuman
-                            </strong>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="info-item">
-
-                        <i class="fas fa-users"></i>
-
-                        <div>
-
-                            <small>
-                                Seleksi
-                            </small>
-
-                            <strong>
-                                Tahap Pemberkasan
-                            </strong>
-
-                        </div>
-
-                    </div>
-
+                <div class="vision-number">
+                    02
                 </div>
 
-
-
-                <!-- CTA SIDEBAR -->
-
-                <div class="article-sidebar-cta">
-
-                    <div class="article-sidebar-icon">
-
-                        <i class="fas fa-bullhorn"></i>
-
-                    </div>
-
-
-                    <h3>
-
-                        Ada Pertanyaan?
-
-                    </h3>
-
-
-                    <p>
-
-                        Untuk informasi lebih lanjut
-                        mengenai Open Recruitment DLM 2026,
-                        silakan hubungi DLM melalui
-                        kanal informasi resmi.
-
-                    </p>
-
-
-					<a
-						href="https://mail.google.com/mail/?view=cm&fs=1&to=dlm.pkj3@gmail.com"
-						target="_blank"
-						rel="noopener noreferrer"
-						class="btn btn-primary"
-					>
-						<i class="fas fa-bullhorn"></i>
-						Hubungi Kami
-					</a>
-
+                <div class="vision-icon">
+                    <i class="fas fa-bullseye"></i>
                 </div>
 
+                <h3>
+                    Misi
+                </h3>
 
-            </aside>
+                <ul>
 
+                    <li>
+                        <i class="fas fa-check"></i>
+                        Meningkatkan kinerja Dewan Legislatif
+                        Mahasiswa sesuai dengan fungsi dan tugas.
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check"></i>
+                        Meningkatkan profesionalitas, solidaritas,
+                        disiplin, dan toleransi antaranggota.
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check"></i>
+                        Membangun hubungan yang erat dan kooperatif
+                        dengan lembaga keorganisasian mahasiswa.
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check"></i>
+                        Mengkaji, mengawasi, dan menampung aspirasi
+                        terhadap program kerja lembaga mahasiswa.
+                    </li>
+
+                    <li>
+                        <i class="fas fa-check"></i>
+                        Melakukan evaluasi dan monitoring berkala
+                        terhadap kinerja organisasi.
+                    </li>
+
+                </ul>
+
+            </article>
 
         </div>
 
     </section>
 
 
+    <!-- CAROUSEL -->
 
-    <!-- =================================================
-         CTA
-    ================================================== -->
+    <section class="section gallery-section">
 
-    <section class="article-cta">
-
-        <div class="article-cta-content">
+        <div class="section-heading reveal">
 
             <span class="section-label">
-
-                DEWAN LEGISLATIF MAHASISWA
-
+                DOKUMENTASI
             </span>
 
-
             <h2>
-
-                Siapkan Dirimu,
-                <span>Jadilah Bagian dari DLM.</span>
-
+                Perjalanan DLM
             </h2>
 
+            <div class="heading-line"></div>
+
+        </div>
+
+
+        <div class="carousel-container reveal">
+
+            <div class="carousel" id="carousel">
+
+        <img src="foto/slide1.png" class="carousel-slide" alt="Dokumentasi DLM 1">
+        <img src="foto/slide2.png" class="carousel-slide" alt="Dokumentasi DLM 2">
+        <img src="foto/slide3.png" class="carousel-slide" alt="Dokumentasi DLM 3">
+        <img src="foto/slide4.png" class="carousel-slide" alt="Dokumentasi DLM 4">
+        <img src="foto/slide5.png" class="carousel-slide" alt="Dokumentasi DLM 5">
+        <img src="foto/slide6.png" class="carousel-slide" alt="Dokumentasi DLM 6">
+        <img src="foto/slide7.png" class="carousel-slide" alt="Dokumentasi DLM 7">
+        <img src="foto/slide8.png" class="carousel-slide" alt="Dokumentasi DLM 8">
+        <img src="foto/slide9.png" class="carousel-slide" alt="Dokumentasi DLM 9">
+        <img src="foto/slide10.png" class="carousel-slide" alt="Dokumentasi DLM 10">
+        <img src="foto/slide11.png" class="carousel-slide" alt="Dokumentasi DLM 11">
+        <img src="foto/slide12.png" class="carousel-slide" alt="Dokumentasi DLM 12">
+        <img src="foto/slide13.png" class="carousel-slide" alt="Dokumentasi DLM 13">
+        <img src="foto/slide14.png" class="carousel-slide" alt="Dokumentasi DLM 14">
+
+    </div>
+
+    <button class="carousel-btn prev" id="prevBtn">
+        ❮
+    </button>
+
+    <button class="carousel-btn next" id="nextBtn">
+        ❯
+    </button>
+
+    <div class="carousel-dots" id="carouselDots"></div>
+
+</div>
+
+    </section>
+
+
+    <!-- ASPIRASI -->
+
+    <section class="aspirasi-section" id="aspirasi">
+
+        <div class="aspirasi-content reveal">
+
+            <span class="section-label">
+                SUARA MAHASISWA
+            </span>
+
+            <h2>
+                Suaramu,
+                <span>Perjuangan Kami.</span>
+            </h2>
 
             <p>
-
-                Ikuti informasi terbaru mengenai
-                rangkaian Open Recruitment DLM
-                Poltekkes Kemenkes Jakarta III
-                Periode 2026.
-
+                Sampaikan kritik, saran, dan aspirasi
+                untuk bersama-sama menciptakan lingkungan
+                organisasi mahasiswa yang lebih baik.
             </p>
 
-
-            <div class="article-cta-buttons">
-
-                <a
-                    href="berita.html"
-                    class="btn btn-light"
-                >
-
-                    <i class="fas fa-newspaper"></i>
-
-                    Lihat Berita Lainnya
-
-                </a>
-
-
-                <a
-                    href="index.html"
-                    class="btn btn-outline"
-                >
-
-                    <i class="fas fa-home"></i>
-
-                    Kembali ke Beranda
-
-                </a>
-
-            </div>
+            <a
+                href="#"
+                class="btn btn-light"
+            >
+                <i class="fas fa-bullhorn"></i>
+                Sampaikan Aspirasi
+            </a>
 
         </div>
 
     </section>
-
 
 </main>
 
 
 
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
-<footer>
-
-    <div class="footer-content">
-
-
-        <!-- ORGANIZATION -->
-
-        <div class="footer-org">
-
-            <div class="footer-logo">
-
-                <img
-                    src="LOGO.PNG"
-                    alt="Logo DLM"
-                >
-
-
-                <div>
-
-                    <strong>
-                        DLM PKJ III
-                    </strong>
-
-                    <span>
-                        Dewan Legislatif Mahasiswa
-                    </span>
-
-                </div>
-
-            </div>
-
-
-            <p>
-
-                Dewan Legislatif Mahasiswa
-                Poltekkes Kemenkes Jakarta III.
-
-            </p>
-
-
-            <small>
-
-                &copy; 2026 DLM Poltekkes Kemenkes Jakarta III.
-                All Rights Reserved.
-
-            </small>
-
-        </div>
-
-
-
-        <!-- NAVIGATION -->
-
-        <div class="footer-links">
-
-            <h4>
-                Navigasi
-            </h4>
-
-
-            <a href="index.html">
-                Beranda
-            </a>
-
-
-            <a href="BPH.html">
-                Tentang Kami
-            </a>
-
-
-            <a href="produk hukum.html">
-                Produk Hukum
-            </a>
-
-
-            <a href="berita.html">
-                Berita
-            </a>
-
-        </div>
-
-
-
-        <!-- SOCIAL -->
-
-        <div class="footer-social-section">
-
-            <h4>
-                Ikuti Kami
-            </h4>
-
-
-            <div class="footer-social">
-
-                <a
-                    href="https://instagram.com/dlmpkj3"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="footer-icon"
-                    title="Instagram"
-                >
-
-                    <i class="fab fa-instagram"></i>
-
-                </a>
-
-
-                <a
-                    href="mailto:dlm.pkj3@gmail.com"
-                    class="footer-icon"
-                    title="Email"
-                >
-
-                    <i class="fas fa-envelope"></i>
-
-                </a>
-
-
-                <a
-                    href="https://youtube.com/@dlmpkj3115"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="footer-icon"
-                    title="YouTube"
-                >
-
-                    <i class="fab fa-youtube"></i>
-
-                </a>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-</footer>
-
-
-
-<!-- =====================================================
-     JAVASCRIPT
-===================================================== -->
-
 <script src="script.js"></script>
-
-
 </body>
-
 </html>
