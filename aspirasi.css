@@ -1,0 +1,1675 @@
+/* =========================================================
+   ASPIRASI PAGE
+========================================================= */
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.aspirasi-hero {
+
+    position: relative;
+
+    min-height: 480px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+    padding: 90px 20px;
+
+    overflow: hidden;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(76, 0, 0, .94),
+            rgba(163, 13, 22, .90)
+        );
+
+}
+
+
+.aspirasi-hero-pattern {
+
+    position: absolute;
+
+    inset: 0;
+
+    opacity: .1;
+
+    background-image:
+
+        repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 12px,
+            white 13px,
+            transparent 14px
+        ),
+
+        repeating-linear-gradient(
+            -45deg,
+            transparent,
+            transparent 12px,
+            white 13px,
+            transparent 14px
+        );
+
+}
+
+
+.aspirasi-hero-content {
+
+    position: relative;
+
+    z-index: 3;
+
+    max-width: 850px;
+
+}
+
+
+.aspirasi-hero .section-label {
+
+    color: #ffd0d0;
+
+}
+
+
+.aspirasi-hero h1 {
+
+    margin: 18px 0;
+
+    font-family:
+        'Archivo Black',
+        sans-serif;
+
+    font-size:
+        clamp(38px, 6vw, 65px);
+
+    line-height: 1.1;
+
+}
+
+
+.aspirasi-hero h1 span {
+
+    display: block;
+
+    color: #ffc3c3;
+
+}
+
+
+.aspirasi-hero p {
+
+    max-width: 680px;
+
+    margin: auto;
+
+    color: rgba(255,255,255,.78);
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+}
+
+
+.aspirasi-hero-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 30px;
+
+}
+
+
+.btn-outline-light {
+
+    border:
+        1px solid rgba(255,255,255,.5);
+
+    color: white;
+
+}
+
+
+.btn-outline-light:hover {
+
+    background: white;
+
+    color: var(--red);
+
+}
+
+
+.aspirasi-hero-symbol {
+
+    position: absolute;
+
+    right: 8%;
+
+    bottom: -50px;
+
+    font-size: 180px;
+
+    color: rgba(255,255,255,.06);
+
+    transform: rotate(-10deg);
+
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.aspirasi-intro {
+
+    position: relative;
+
+}
+
+
+.aspirasi-intro-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+
+}
+
+
+.aspirasi-intro-text {
+
+    color: var(--text-gray);
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+}
+
+
+.aspirasi-intro-text p {
+
+    margin-bottom: 18px;
+
+}
+
+
+.aspirasi-info-card {
+
+    position: relative;
+
+    padding: 40px;
+
+    background: white;
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+
+    border:
+        1px solid var(--border);
+
+    overflow: hidden;
+
+}
+
+
+.aspirasi-info-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 120px;
+
+    height: 120px;
+
+    right: -50px;
+
+    bottom: -50px;
+
+    border:
+        2px solid rgba(163,13,22,.08);
+
+    border-radius: 50%;
+
+}
+
+
+.aspirasi-info-icon {
+
+    width: 60px;
+
+    height: 60px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 16px;
+
+    background: #fff0f0;
+
+    color: var(--red);
+
+    font-size: 24px;
+
+    margin-bottom: 22px;
+
+}
+
+
+.aspirasi-info-card h3 {
+
+    margin-bottom: 10px;
+
+    color: var(--red-dark);
+
+    font-family:
+        'Archivo Black',
+        sans-serif;
+
+}
+
+
+.aspirasi-info-card p {
+
+    color: var(--text-gray);
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================================
+   ARCHIVE
+========================================================= */
+
+.aspiration-archive {
+
+    position: relative;
+
+    padding: 100px 5%;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #fffaf7,
+            #f8e9e7
+        );
+
+}
+
+
+.aspiration-archive::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    right: 0;
+
+    width: 300px;
+
+    height: 300px;
+
+    opacity: .08;
+
+    background-image:
+
+        radial-gradient(
+            var(--red) 2px,
+            transparent 2px
+        );
+
+    background-size: 22px 22px;
+
+}
+
+
+.aspiration-archive > .section-heading {
+
+    max-width: 800px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+}
+
+
+.aspiration-archive > .section-heading p {
+
+    margin-top: 15px;
+
+    color: var(--text-gray);
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   QUARTER
+========================================================= */
+
+.quarter-section {
+
+    position: relative;
+
+    max-width: 1100px;
+
+    margin: 80px auto 0;
+
+}
+
+
+.quarter-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+
+    padding-bottom: 20px;
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+
+.quarter-label {
+
+    color: var(--red);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.quarter-header h3 {
+
+    margin-top: 5px;
+
+    color: var(--red-dark);
+
+    font-family:
+        'Archivo Black',
+        sans-serif;
+
+    font-size: 28px;
+
+}
+
+
+.quarter-header p {
+
+    margin-top: 5px;
+
+    color: var(--text-gray);
+
+    font-size: 12px;
+
+}
+
+
+.quarter-number {
+
+    font-family:
+        'Archivo Black',
+        sans-serif;
+
+    font-size: 90px;
+
+    line-height: 1;
+
+    color: rgba(163,13,22,.07);
+
+}
+
+
+/* =========================================================
+   RESULT GRID
+========================================================= */
+
+.aspiration-results {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+
+}
+
+
+/* =========================================================
+   RESULT CARD
+========================================================= */
+
+.aspiration-result-card {
+
+    overflow: hidden;
+
+    background: white;
+
+    border-radius: 22px;
+
+    border:
+        1px solid var(--border);
+
+    box-shadow: var(--shadow);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+}
+
+
+.aspiration-result-card:hover {
+
+    transform:
+        translateY(-8px);
+
+    box-shadow:
+        var(--shadow-hover);
+
+}
+
+
+/* HEADER */
+
+.result-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 25px;
+
+}
+
+
+.result-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 14px;
+
+    background: #fff0f0;
+
+    color: var(--red);
+
+}
+
+
+.result-header span {
+
+    color: var(--red);
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+.result-header h4 {
+
+    margin-top: 4px;
+
+    color: var(--text-dark);
+
+    font-size: 18px;
+
+}
+
+
+/* IMAGE */
+
+.result-image {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 430px;
+
+    background: #f2e6e4;
+
+    overflow: hidden;
+
+}
+
+
+.result-image::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            transparent 70%,
+            rgba(50,0,0,.08)
+        );
+
+}
+
+
+.result-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform .5s ease;
+
+}
+
+
+.aspiration-result-card:hover
+.result-image img {
+
+    transform:
+        scale(1.04);
+
+}
+
+
+/* FOOTER */
+
+.result-footer {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 17px 25px;
+
+    border-top:
+        1px solid var(--border);
+
+    color: var(--text-gray);
+
+    font-size: 10px;
+
+}
+
+
+.result-footer span:last-child {
+
+    color: var(--red);
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* =========================================================
+   SUBMIT ASPIRATION
+========================================================= */
+
+.aspirasi-submit {
+
+    position: relative;
+
+    padding: 110px 5%;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #5b0505,
+            #a30d16
+        );
+
+}
+
+
+.aspirasi-submit-pattern {
+
+    position: absolute;
+
+    inset: 0;
+
+    opacity: .1;
+
+    background-image:
+
+        radial-gradient(
+            white 1px,
+            transparent 1px
+        );
+
+    background-size: 20px 20px;
+
+}
+
+
+.aspirasi-submit-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 760px;
+
+    margin: auto;
+
+}
+
+
+.submit-icon {
+
+    width: 75px;
+
+    height: 75px;
+
+    display: grid;
+
+    place-items: center;
+
+    margin: 0 auto 25px;
+
+    border-radius: 22px;
+
+    background:
+        rgba(255,255,255,.12);
+
+    border:
+        1px solid rgba(255,255,255,.15);
+
+    font-size: 27px;
+
+}
+
+
+.aspirasi-submit .section-label {
+
+    color: #ffc5c5;
+
+}
+
+
+.aspirasi-submit h2 {
+
+    margin: 15px 0;
+
+    font-family:
+        'Archivo Black',
+        sans-serif;
+
+    font-size:
+        clamp(30px, 5vw, 50px);
+
+    line-height: 1.15;
+
+}
+
+
+.aspirasi-submit h2 span {
+
+    display: block;
+
+    color: #ffcccc;
+
+}
+
+
+.aspirasi-submit-content > p {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    color: rgba(255,255,255,.78);
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+}
+
+
+/* ANONYMOUS BOX */
+
+.anonymous-note {
+
+    max-width: 620px;
+
+    margin: 30px auto;
+
+    padding: 18px 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    text-align: left;
+
+    border-radius: 15px;
+
+    background:
+        rgba(255,255,255,.08);
+
+    border:
+        1px solid rgba(255,255,255,.13);
+
+}
+
+
+.anonymous-note i {
+
+    width: 42px;
+
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 12px;
+
+    background:
+        rgba(255,255,255,.1);
+
+    color: #ffd0d0;
+
+}
+
+
+.anonymous-note span {
+
+    color: rgba(255,255,255,.75);
+
+    font-size: 11px;
+
+    line-height: 1.7;
+
+}
+
+
+.anonymous-note strong {
+
+    display: block;
+
+    color: white;
+
+    margin-bottom: 2px;
+
+}
+
+
+/* BUTTON */
+
+.aspirasi-submit-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 15px 27px;
+
+    border-radius: 100px;
+
+    background: white;
+
+    color: var(--red);
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.18);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+
+}
+
+
+.aspirasi-submit-button:hover {
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.25);
+
+}
+
+
+.aspirasi-submit-content small {
+
+    display: block;
+
+    margin-top: 15px;
+
+    color: rgba(255,255,255,.45);
+
+    font-size: 9px;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .aspirasi-intro-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .aspiration-results {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .aspirasi-hero {
+
+        min-height: 550px;
+
+    }
+
+
+    .aspirasi-hero-symbol {
+
+        display: none;
+
+    }
+
+
+    .aspirasi-hero-buttons {
+
+        flex-direction: column;
+
+        width: 100%;
+
+        max-width: 300px;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+
+    .aspirasi-hero-buttons .btn {
+
+        width: 100%;
+
+    }
+
+
+    .aspiration-archive {
+
+        padding: 70px 5%;
+
+    }
+
+
+    .quarter-section {
+
+        margin-top: 60px;
+
+    }
+
+
+    .quarter-number {
+
+        font-size: 65px;
+
+    }
+
+
+    .result-image {
+
+        height: 360px;
+
+    }
+
+
+    .aspirasi-submit {
+
+        padding: 80px 6%;
+
+    }
+
+
+    .anonymous-note {
+
+        align-items: flex-start;
+
+    }
+
+
+    .aspirasi-submit-button {
+
+        width: 100%;
+
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .quarter-header h3 {
+
+        font-size: 22px;
+
+    }
+
+
+    .quarter-number {
+
+        font-size: 50px;
+
+    }
+
+
+    .result-image {
+
+        height: 300px;
+
+    }
+
+
+    .result-header {
+
+        padding: 20px;
+
+    }
+
+}
+/* =========================================
+   HMJ ASPIRASI GRID
+========================================= */
+
+.hmj-card {
+    overflow: hidden;
+}
+
+
+/* HEADER HMJ */
+
+.aspirasi-card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 24px 24px 20px;
+}
+
+
+.aspirasi-icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 82, 70, 0.16),
+            rgba(120, 20, 20, 0.28)
+        );
+
+    color: #ff6659;
+
+    font-size: 20px;
+
+    flex-shrink: 0;
+}
+
+
+.aspirasi-label {
+    display: block;
+
+    color: #ff695c;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 5px;
+}
+
+
+.aspirasi-card-header h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 21px;
+    font-weight: 700;
+}
+
+
+.aspirasi-card-header p {
+    margin: 3px 0 0;
+
+    color: rgba(255,255,255,0.55);
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   GRID 4 HMJ
+========================================= */
+
+.hmj-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+
+    padding: 0 20px 22px;
+}
+
+
+/* =========================================
+   HMJ ITEM
+========================================= */
+
+.hmj-item {
+
+    background: #171313;
+
+    border: 1px solid rgba(255,255,255,0.07);
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.hmj-item:hover {
+
+    transform: translateY(-5px);
+
+    border-color: rgba(255, 93, 78, 0.4);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.25);
+}
+
+
+/* =========================================
+   HMJ ITEM HEADER
+========================================= */
+
+.hmj-item-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px;
+}
+
+
+.hmj-item-icon {
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background: rgba(255, 92, 78, 0.12);
+
+    color: #ff6659;
+
+    font-size: 14px;
+
+    flex-shrink: 0;
+}
+
+
+.hmj-item-header span {
+
+    display: block;
+
+    color: #ff6659;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+
+    margin-bottom: 3px;
+}
+
+
+.hmj-item-header h4 {
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.hmj-image {
+
+    width: 100%;
+
+    height: 210px;
+
+    overflow: hidden;
+
+    background: #272020;
+}
+
+
+.hmj-image img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+
+.hmj-item:hover .hmj-image img {
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.hmj-button {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin: 12px 15px 15px;
+
+    padding: 11px 13px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.07);
+
+    color: rgba(255,255,255,0.8);
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.hmj-button i {
+
+    color: #ff6659;
+
+    transition: transform 0.3s ease;
+}
+
+
+.hmj-button:hover {
+
+    background: #ff5548;
+
+    border-color: #ff5548;
+
+    color: #ffffff;
+}
+
+
+.hmj-button:hover i {
+
+    color: #ffffff;
+
+    transform: translateX(4px);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .hmj-grid {
+
+        grid-template-columns: 1fr;
+
+        padding: 0 15px 18px;
+    }
+
+    .hmj-image {
+
+        height: 240px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .aspirasi-card-header {
+
+        padding: 20px 18px 16px;
+    }
+
+    .hmj-item-header {
+
+        padding: 13px;
+    }
+
+    .hmj-image {
+
+        height: 200px;
+    }
+
+}
+/* =========================================
+   BEM RESULT CARD
+========================================= */
+
+.bem-card {
+    overflow: hidden;
+}
+
+
+/* HEADER */
+
+.result-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 22px 24px 18px;
+}
+
+
+.result-icon {
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 92, 78, 0.18),
+            rgba(120, 20, 20, 0.25)
+        );
+
+    color: #ff6659;
+
+    font-size: 19px;
+}
+
+
+.result-label {
+
+    display: block;
+
+    color: #ff695c;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 4px;
+}
+
+
+.result-header h3 {
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 21px;
+
+    font-weight: 700;
+}
+
+
+.result-header p {
+
+    margin: 3px 0 0;
+
+    color: rgba(255,255,255,0.55);
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.result-image {
+
+    width: 100%;
+
+    height: 330px;
+
+    overflow: hidden;
+
+    background: #292323;
+}
+
+
+.result-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.5s ease,
+        filter 0.5s ease;
+}
+
+
+.bem-card:hover .result-image img {
+
+    transform: scale(1.035);
+
+    filter: brightness(1.05);
+}
+
+
+/* =========================================
+   FOOTER INFO
+========================================= */
+
+.result-footer {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 15px 22px 5px;
+
+    color: rgba(255,255,255,0.55);
+
+    font-size: 11px;
+}
+
+
+.result-footer span {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+
+.result-footer i {
+
+    color: #ff6659;
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.result-button {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin: 12px 22px 20px;
+
+    padding: 12px 15px;
+
+    border-radius: 11px;
+
+    text-decoration: none;
+
+    color: rgba(255,255,255,0.85);
+
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.07);
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.result-button i {
+
+    color: #ff6659;
+
+    transition: transform 0.3s ease;
+}
+
+
+.result-button:hover {
+
+    background: #ff5548;
+
+    border-color: #ff5548;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+.result-button:hover i {
+
+    color: #ffffff;
+
+    transform: translateX(4px);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .result-image {
+
+        height: 280px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .result-header {
+
+        padding: 18px 16px 15px;
+    }
+
+    .result-footer {
+
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .result-button {
+
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .result-image {
+
+        height: 230px;
+    }
+
+}

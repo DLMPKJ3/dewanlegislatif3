@@ -1,0 +1,2143 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Halaman Aspirasi Dewan Legislatif Mahasiswa Poltekkes Kemenkes Jakarta III."
+    >
+
+    <title>
+        Aspirasi | DLM Poltekkes Kemenkes Jakarta III
+    </title>
+
+
+    <!-- =========================
+         GOOGLE FONT
+    ========================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =========================
+         FONT AWESOME
+    ========================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <!-- =========================
+         CSS UTAMA
+    ========================== -->
+
+    <link
+        rel="stylesheet"
+        href="styles.css"
+    >
+
+
+    <!-- =========================
+         CSS KHUSUS ASPIRASI
+    ========================== -->
+
+    <style>
+
+        /* =========================================
+           ASPIRASI PAGE
+        ========================================= */
+
+        .aspirasi-page {
+            background:
+                linear-gradient(
+                    rgba(35, 20, 20, 0.96),
+                    rgba(35, 20, 20, 0.96)
+                ),
+                url("foto/batik-pattern.png");
+
+            background-size:
+                auto,
+                420px;
+
+            background-attachment: fixed;
+        }
+
+
+        /* =========================================
+           PAGE HERO
+        ========================================= */
+
+        .aspirasi-hero {
+            min-height: 480px;
+
+            display: flex;
+            align-items: center;
+
+            position: relative;
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(90, 10, 10, 0.98),
+                    rgba(35, 20, 20, 0.96)
+                );
+        }
+
+
+        .aspirasi-hero::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 500px;
+            height: 500px;
+
+            right: -180px;
+            top: -180px;
+
+            border: 80px solid rgba(255, 255, 255, 0.025);
+
+            transform: rotate(45deg);
+
+        }
+
+
+        .aspirasi-hero::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 320px;
+            height: 320px;
+
+            left: -140px;
+            bottom: -180px;
+
+            border: 60px solid rgba(255, 105, 75, 0.08);
+
+            transform: rotate(45deg);
+
+        }
+
+
+        .aspirasi-hero-content {
+
+            width: min(1150px, 90%);
+
+            margin: 0 auto;
+
+            position: relative;
+            z-index: 2;
+
+            padding: 90px 0;
+        }
+
+
+        .aspirasi-hero .section-label {
+
+            color: #ff8b72;
+
+        }
+
+
+        .aspirasi-hero h1 {
+
+            font-family: "Archivo Black", sans-serif;
+
+            font-size: clamp(2.5rem, 6vw, 5rem);
+
+            line-height: 1.05;
+
+            color: #ffffff;
+
+            margin: 15px 0 25px;
+
+        }
+
+
+        .aspirasi-hero h1 span {
+
+            color: #ff725c;
+
+            display: block;
+
+        }
+
+
+        .aspirasi-hero p {
+
+            max-width: 720px;
+
+            color: rgba(255,255,255,0.78);
+
+            font-size: 1.05rem;
+
+            line-height: 1.8;
+
+        }
+
+
+        /* =========================================
+           HERO ICON
+        ========================================= */
+
+        .aspirasi-hero-icon {
+
+            position: absolute;
+
+            right: 7%;
+
+            top: 50%;
+
+            transform: translateY(-50%);
+
+            width: 180px;
+            height: 180px;
+
+            border-radius: 50%;
+
+            background: rgba(255,255,255,0.05);
+
+            border: 1px solid rgba(255,255,255,0.12);
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            color: #ff725c;
+
+            font-size: 5rem;
+
+            box-shadow:
+                0 25px 80px rgba(0,0,0,0.25);
+
+        }
+
+
+        /* =========================================
+           ASPIRASI INFO
+        ========================================= */
+
+        .aspirasi-info {
+
+            width: min(1150px, 90%);
+
+            margin: 70px auto 20px;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 20px;
+
+        }
+
+
+        .info-card {
+
+            background: rgba(255,255,255,0.045);
+
+            border: 1px solid rgba(255,255,255,0.08);
+
+            border-radius: 20px;
+
+            padding: 28px;
+
+            transition:
+                transform 0.3s ease,
+                border-color 0.3s ease;
+
+        }
+
+
+        .info-card:hover {
+
+            transform: translateY(-6px);
+
+            border-color:
+                rgba(255,114,92,0.45);
+
+        }
+
+
+        .info-icon {
+
+            width: 52px;
+            height: 52px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 15px;
+
+            background:
+                rgba(255,114,92,0.12);
+
+            color: #ff725c;
+
+            font-size: 1.25rem;
+
+            margin-bottom: 18px;
+
+        }
+
+
+        .info-card h3 {
+
+            color: #ffffff;
+
+            margin: 0 0 10px;
+
+            font-size: 1.15rem;
+
+        }
+
+
+        .info-card p {
+
+            color: rgba(255,255,255,0.62);
+
+            line-height: 1.7;
+
+            font-size: 0.9rem;
+
+            margin: 0;
+
+        }
+
+
+        /* =========================================
+           QUARTER SECTION
+        ========================================= */
+
+        .quarter-section {
+
+            width: min(1150px, 90%);
+
+            margin: 100px auto;
+
+            position: relative;
+
+        }
+
+
+        .quarter-heading {
+
+            position: relative;
+
+            margin-bottom: 38px;
+
+            padding-left: 25px;
+
+        }
+
+
+        .quarter-heading::before {
+
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+
+            top: 0;
+
+            width: 5px;
+
+            height: 100%;
+
+            min-height: 75px;
+
+            background:
+                linear-gradient(
+                    to bottom,
+                    #ff725c,
+                    #a51d1d
+                );
+
+            border-radius: 20px;
+
+        }
+
+
+        .quarter-heading .quarter-label {
+
+            display: block;
+
+            color: #ff725c;
+
+            font-size: 0.75rem;
+
+            font-weight: 800;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 8px;
+
+        }
+
+
+        .quarter-heading h2 {
+
+            color: #ffffff;
+
+            font-family: "Archivo Black", sans-serif;
+
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+
+            margin: 0;
+
+        }
+
+
+        .quarter-heading p {
+
+            color: rgba(255,255,255,0.55);
+
+            margin: 8px 0 0;
+
+        }
+
+
+        /* =========================================
+           ASPIRATION GRID
+        ========================================= */
+
+        .aspirasi-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 24px;
+
+        }
+
+
+        /* =========================================
+           RESULT CARD
+        ========================================= */
+
+        .result-card {
+
+            overflow: hidden;
+
+            background: #171313;
+
+            border: 1px solid rgba(255,255,255,0.07);
+
+            border-radius: 22px;
+
+            box-shadow:
+                0 20px 60px rgba(0,0,0,0.18);
+
+            transition:
+                transform 0.35s ease,
+                border-color 0.35s ease,
+                box-shadow 0.35s ease;
+
+        }
+
+
+        .result-card:hover {
+
+            transform: translateY(-8px);
+
+            border-color:
+                rgba(255,114,92,0.35);
+
+            box-shadow:
+                0 28px 70px rgba(0,0,0,0.28);
+
+        }
+
+
+        /* =========================================
+           RESULT HEADER
+        ========================================= */
+
+        .result-header {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 16px;
+
+            padding: 24px;
+
+        }
+
+
+        .result-icon {
+
+            width: 52px;
+            height: 52px;
+
+            flex-shrink: 0;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 15px;
+
+            background:
+                rgba(255,114,92,0.12);
+
+            color: #ff725c;
+
+            font-size: 1.2rem;
+
+        }
+
+
+        .result-label {
+
+            display: block;
+
+            color: #ff725c;
+
+            font-size: 0.65rem;
+
+            font-weight: 800;
+
+            letter-spacing: 1.5px;
+
+            margin-bottom: 5px;
+
+        }
+
+
+        .result-header h3 {
+
+            margin: 0;
+
+            color: #ffffff;
+
+            font-size: 1.25rem;
+
+            font-weight: 700;
+
+        }
+
+
+        /* =========================================
+           IMAGE
+        ========================================= */
+
+        .result-image {
+
+            width: 100%;
+
+            height: 330px;
+
+            background: #282020;
+
+            overflow: hidden;
+
+            cursor: pointer;
+
+            position: relative;
+
+        }
+
+
+        .result-image::after {
+
+            content: "\f00e";
+
+            font-family:
+                "Font Awesome 6 Free";
+
+            font-weight: 900;
+
+            position: absolute;
+
+            right: 18px;
+            bottom: 18px;
+
+            width: 42px;
+            height: 42px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            color: #ffffff;
+
+            background:
+                rgba(0,0,0,0.6);
+
+            opacity: 0;
+
+            transform: scale(0.8);
+
+            transition:
+                opacity 0.3s ease,
+                transform 0.3s ease;
+
+        }
+
+
+        .result-image:hover::after {
+
+            opacity: 1;
+
+            transform: scale(1);
+
+        }
+
+
+        .result-image img {
+
+            width: 100%;
+            height: 100%;
+
+            display: block;
+
+            object-fit: cover;
+
+            transition:
+                transform 0.5s ease;
+
+        }
+
+
+        .result-image:hover img {
+
+            transform: scale(1.04);
+
+        }
+
+
+        /* =========================================
+           FOOTER CARD
+        ========================================= */
+
+        .result-footer {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            gap: 15px;
+
+            padding: 18px 24px;
+
+            border-top:
+                1px solid rgba(255,255,255,0.06);
+
+            color:
+                rgba(255,255,255,0.52);
+
+            font-size: 0.78rem;
+
+        }
+
+
+        .result-footer span {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 7px;
+
+        }
+
+
+        .result-footer i {
+
+            color: #ff725c;
+
+        }
+
+
+        /* =========================================
+           HMJ CARD
+        ========================================= */
+
+        .hmj-card {
+
+            cursor: default;
+
+        }
+
+
+        .hmj-card .result-header {
+
+            padding-bottom: 20px;
+
+        }
+
+
+        .hmj-name {
+
+            font-size: 0.78rem;
+
+            color: #ff725c;
+
+            font-weight: 600;
+
+        }
+
+
+        /* =========================================
+           BEM FULL WIDTH
+        ========================================= */
+
+        .bem-card {
+
+            grid-column: 1 / -1;
+
+        }
+
+
+        .bem-card .result-image {
+
+            height: 420px;
+
+        }
+
+
+        /* =========================================
+           CTA ASPIRASI
+        ========================================= */
+
+        .aspirasi-cta {
+
+            width: min(1150px, 90%);
+
+            margin: 120px auto 100px;
+
+            padding: 55px;
+
+            position: relative;
+
+            overflow: hidden;
+
+            border-radius: 28px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #8e1818,
+                    #421414
+                );
+
+            box-shadow:
+                0 30px 80px rgba(0,0,0,0.25);
+
+        }
+
+
+        .aspirasi-cta::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 300px;
+            height: 300px;
+
+            right: -120px;
+            top: -120px;
+
+            border: 50px solid rgba(255,255,255,0.05);
+
+            transform: rotate(45deg);
+
+        }
+
+
+        .aspirasi-cta-content {
+
+            position: relative;
+
+            z-index: 2;
+
+            max-width: 750px;
+
+        }
+
+
+        .aspirasi-cta-label {
+
+            color: #ffad9d;
+
+            font-size: 0.75rem;
+
+            font-weight: 800;
+
+            letter-spacing: 2px;
+
+        }
+
+
+        .aspirasi-cta h2 {
+
+            color: #ffffff;
+
+            font-family: "Archivo Black", sans-serif;
+
+            font-size: clamp(1.8rem, 4vw, 3rem);
+
+            margin: 12px 0;
+
+        }
+
+
+        .aspirasi-cta p {
+
+            color: rgba(255,255,255,0.7);
+
+            line-height: 1.8;
+
+            margin-bottom: 28px;
+
+        }
+
+
+        .anonymous-button {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            padding: 14px 24px;
+
+            border-radius: 12px;
+
+            background: #ffffff;
+
+            color: #8e1818;
+
+            text-decoration: none;
+
+            font-weight: 700;
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+
+        }
+
+
+        .anonymous-button:hover {
+
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 12px 30px rgba(0,0,0,0.2);
+
+        }
+
+
+        /* =========================================
+           LIGHTBOX
+        ========================================= */
+
+        .aspirasi-lightbox {
+
+            position: fixed;
+
+            inset: 0;
+
+            background:
+                rgba(0,0,0,0.9);
+
+            z-index: 9999;
+
+            display: none;
+
+            align-items: center;
+            justify-content: center;
+
+            padding: 30px;
+
+        }
+
+
+        .aspirasi-lightbox.active {
+
+            display: flex;
+
+        }
+
+
+        .aspirasi-lightbox img {
+
+            max-width: 95vw;
+            max-height: 90vh;
+
+            object-fit: contain;
+
+            border-radius: 12px;
+
+            box-shadow:
+                0 20px 80px rgba(0,0,0,0.5);
+
+        }
+
+
+        .lightbox-close {
+
+            position: absolute;
+
+            top: 25px;
+            right: 30px;
+
+            width: 45px;
+            height: 45px;
+
+            border: none;
+
+            border-radius: 50%;
+
+            background:
+                rgba(255,255,255,0.1);
+
+            color: #ffffff;
+
+            font-size: 1.2rem;
+
+            cursor: pointer;
+
+        }
+
+
+        .lightbox-close:hover {
+
+            background: #ff725c;
+
+        }
+
+
+        /* =========================================
+           RESPONSIVE
+        ========================================= */
+
+        @media (max-width: 900px) {
+
+            .aspirasi-hero-icon {
+
+                right: 4%;
+
+                width: 130px;
+                height: 130px;
+
+                font-size: 3.5rem;
+
+                opacity: 0.5;
+
+            }
+
+
+            .aspirasi-info {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .aspirasi-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .bem-card {
+
+                grid-column: auto;
+
+            }
+
+        }
+
+
+        @media (max-width: 650px) {
+
+            .aspirasi-hero {
+
+                min-height: 430px;
+
+            }
+
+
+            .aspirasi-hero-content {
+
+                padding: 70px 0;
+
+            }
+
+
+            .aspirasi-hero-icon {
+
+                display: none;
+
+            }
+
+
+            .quarter-section {
+
+                margin: 70px auto;
+
+            }
+
+
+            .result-image {
+
+                height: 250px;
+
+            }
+
+
+            .bem-card .result-image {
+
+                height: 270px;
+
+            }
+
+
+            .result-header {
+
+                padding: 20px;
+
+            }
+
+
+            .result-footer {
+
+                padding: 16px 20px;
+
+                flex-direction: column;
+
+                align-items: flex-start;
+
+            }
+
+
+            .aspirasi-cta {
+
+                padding: 35px 25px;
+
+                margin-top: 80px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body class="aspirasi-page">
+
+
+<!-- =====================================================
+     NAVBAR
+====================================================== -->
+
+<nav class="navbar">
+
+    <div class="navbar-container">
+
+
+        <!-- LOGO -->
+
+        <a
+            href="index.html"
+            class="navbar-logo"
+        >
+
+            <img
+                src="LOGO.PNG"
+                alt="Logo Dewan Legislatif Mahasiswa"
+            >
+
+            <div class="logo-text">
+
+                <strong>
+                    DLM PKJ III
+                </strong>
+
+                <span>
+                    Dewan Legislatif Mahasiswa
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <!-- MOBILE BUTTON -->
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Buka menu"
+        >
+
+            <i class="fas fa-bars"></i>
+
+        </button>
+
+
+        <!-- MENU -->
+
+        <ul
+            class="navbar-menu"
+            id="navbarMenu"
+        >
+
+            <li>
+
+                <a href="index.html">
+                    Beranda
+                </a>
+
+            </li>
+
+
+            <li class="has-dropdown">
+
+                <a
+                    href="#"
+                    class="dropdown-toggle"
+                >
+
+                    Tentang Kami
+
+                    <i class="fas fa-chevron-down"></i>
+
+                </a>
+
+
+                <ul class="dropdown">
+
+                    <li>
+                        <a href="BPH.html">
+                            Badan Pengurus Harian
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="komsat.html">
+                            Komisi I
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="komdu.html">
+                            Komisi II
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="komti.html">
+                            Komisi III
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="kompat.html">
+                            Komisi IV
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="komli.html">
+                            Komisi V
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+
+            <li>
+
+                <a href="produk hukum.html">
+                    Produk Hukum
+                </a>
+
+            </li>
+
+
+            <li>
+
+                <a href="berita.html">
+                    Berita
+                </a>
+
+            </li>
+
+
+            <li class="nav-aspirasi">
+
+                <a
+                    href="aspirasi.html"
+                    class="active"
+                >
+
+                    <i class="fas fa-bullhorn"></i>
+
+                    Aspirasi
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =====================================================
+     MAIN
+====================================================== -->
+
+<main>
+
+
+    <!-- =================================================
+         HERO ASPIRASI
+    ================================================== -->
+
+    <section class="aspirasi-hero">
+
+        <div class="aspirasi-hero-content">
+
+
+            <span class="section-label">
+
+                <i class="fas fa-bullhorn"></i>
+
+                RUANG ASPIRASI MAHASISWA
+
+            </span>
+
+
+            <h1>
+
+                Suaramu,
+
+                <span>Perjuangan Kami.</span>
+
+            </h1>
+
+
+            <p>
+
+                DLM hadir sebagai ruang bagi mahasiswa untuk
+                menyampaikan kritik, saran, dan aspirasi.
+                Temukan hasil Kertas Kritik dan Saran dari
+                BEM dan HMJ pada setiap periode triwulan.
+
+            </p>
+
+        </div>
+
+
+        <div class="aspirasi-hero-icon">
+
+            <i class="fas fa-comments"></i>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         INFO ASPIRASI
+    ================================================== -->
+
+    <section class="aspirasi-info">
+
+
+        <!-- CARD 1 -->
+
+        <article class="info-card reveal">
+
+            <div class="info-icon">
+
+                <i class="fas fa-ear-listen"></i>
+
+            </div>
+
+            <h3>
+                Suara Mahasiswa
+            </h3>
+
+            <p>
+
+                Setiap kritik, saran, dan aspirasi
+                mahasiswa menjadi bagian penting
+                dalam evaluasi lembaga mahasiswa.
+
+            </p>
+
+        </article>
+
+
+        <!-- CARD 2 -->
+
+        <article class="info-card reveal">
+
+            <div class="info-icon">
+
+                <i class="fas fa-chart-line"></i>
+
+            </div>
+
+            <h3>
+                Evaluasi Berkala
+            </h3>
+
+            <p>
+
+                Hasil aspirasi ditampilkan berdasarkan
+                periode triwulan agar perkembangan
+                evaluasi dapat dipantau dengan lebih jelas.
+
+            </p>
+
+        </article>
+
+
+        <!-- CARD 3 -->
+
+        <article class="info-card reveal">
+
+            <div class="info-icon">
+
+                <i class="fas fa-user-secret"></i>
+
+            </div>
+
+            <h3>
+                Sampaikan Aspirasi kepada Kami
+            </h3>
+
+            <p>
+
+                Mahasiswa dapat menyampaikan aspirasi
+                secara langsung melalui email DLM.
+
+            </p>
+
+        </article>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         TRIWULAN I
+    ====================================================== -->
+
+    <section class="quarter-section">
+
+
+        <div class="quarter-heading reveal">
+
+            <span class="quarter-label">
+                PERIODE 01
+            </span>
+
+            <h2>
+                Triwulan I
+            </h2>
+
+            <p>
+                Januari - Maret
+            </p>
+			<p>
+                Belum ada aspirasi di sini
+            </p>
+
+        </div>
+
+
+      
+    <!-- =====================================================
+         TRIWULAN II
+    ====================================================== -->
+
+    <section class="quarter-section">
+
+
+        <div class="quarter-heading reveal">
+
+            <span class="quarter-label">
+                PERIODE 02
+            </span>
+
+            <h2>
+                Triwulan II
+            </h2>
+
+            <p>
+                April - Juni
+            </p>
+
+        </div>
+
+
+        <div class="aspirasi-grid">
+
+
+            <!-- HMJ KEPERAWATAN -->
+
+            <article class="result-card hmj-card reveal">
+
+                <div class="result-header">
+
+                    <div class="result-icon">
+                        <i class="fas fa-user-nurse"></i>
+                    </div>
+
+                    <div>
+
+                        <span class="result-label">
+                            HASIL ASPIRASI HMJ
+                        </span>
+
+                        <h3>
+                            HMJ Keperawatan
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="result-image"
+                    onclick="openAspirasiImage(this)"
+                >
+
+                    <img
+                        src="fotoaspirasi/triwulan2-hmj-keperawatan.jpg"
+                        alt="Hasil Kertas Kritik dan Saran HMJ Keperawatan Triwulan II"
+                        loading="lazy"
+                    >
+
+                </div>
+
+
+                <div class="result-footer">
+
+                    <span>
+                        <i class="fas fa-calendar-alt"></i>
+                        Triwulan II
+                    </span>
+
+                    <span>
+                        HMJ Keperawatan
+                    </span>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- HMJ KEBIDANAN -->
+
+            <article class="result-card hmj-card reveal">
+
+                <div class="result-header">
+
+                    <div class="result-icon">
+                        <i class="fas fa-person-pregnant"></i>
+                    </div>
+
+                    <div>
+
+                        <span class="result-label">
+                            HASIL ASPIRASI HMJ
+                        </span>
+
+                        <h3>
+                            HMJ Kebidanan
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="result-image"
+                    onclick="openAspirasiImage(this)"
+                >
+
+                    <img
+                        src="fotoaspirasi/triwulan2-hmj-kebidanan.jpg"
+                        alt="Hasil Kertas Kritik dan Saran HMJ Kebidanan Triwulan II"
+                        loading="lazy"
+                    >
+
+                </div>
+
+
+                <div class="result-footer">
+
+                    <span>
+                        <i class="fas fa-calendar-alt"></i>
+                        Triwulan II
+                    </span>
+
+                    <span>
+                        HMJ Kebidanan
+                    </span>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- HMJ FISIOTERAPI -->
+
+            <article class="result-card hmj-card reveal">
+
+                <div class="result-header">
+
+                    <div class="result-icon">
+                        <i class="fas fa-person-walking"></i>
+                    </div>
+
+                    <div>
+
+                        <span class="result-label">
+                            HASIL ASPIRASI HMJ
+                        </span>
+
+                        <h3>
+                            HMJ Fisioterapi
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="result-image"
+                    onclick="openAspirasiImage(this)"
+                >
+
+                    <img
+                        src="fotoaspirasi/triwulan2-hmj-fisioterapi.jpg"
+                        alt="Hasil Kertas Kritik dan Saran HMJ Fisioterapi Triwulan II"
+                        loading="lazy"
+                    >
+
+                </div>
+
+
+                <div class="result-footer">
+
+                    <span>
+                        <i class="fas fa-calendar-alt"></i>
+                        Triwulan II
+                    </span>
+
+                    <span>
+                        HMJ Fisioterapi
+                    </span>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- HMJ TLM -->
+
+            <article class="result-card hmj-card reveal">
+
+                <div class="result-header">
+
+                    <div class="result-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+
+                    <div>
+
+                        <span class="result-label">
+                            HASIL ASPIRASI HMJ
+                        </span>
+
+                        <h3>
+                            HMJ Teknologi Laboratorium Medis
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="result-image"
+                    onclick="openAspirasiImage(this)"
+                >
+
+                    <img
+                        src="fotoaspirasi/triwulan2-hmj-tlm.jpg"
+                        alt="Hasil Kertas Kritik dan Saran HMJ TLM Triwulan II"
+                        loading="lazy"
+                    >
+
+                </div>
+
+
+                <div class="result-footer">
+
+                    <span>
+                        <i class="fas fa-calendar-alt"></i>
+                        Triwulan II
+                    </span>
+
+                    <span>
+                        HMJ TLM
+                    </span>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- BEM -->
+
+            <article class="result-card bem-card reveal">
+
+                <div class="result-header">
+
+                    <div class="result-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+
+                    <div>
+
+                        <span class="result-label">
+                            HASIL ASPIRASI
+                        </span>
+
+                        <h3>
+                            Badan Eksekutif Mahasiswa
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="result-image"
+                    onclick="openAspirasiImage(this)"
+                >
+
+                    <img
+                        src="fotoaspirasi/triwulan2-bem.jpg"
+                        alt="Hasil Kertas Kritik dan Saran BEM Triwulan II"
+                        loading="lazy"
+                    >
+
+                </div>
+
+
+                <div class="result-footer">
+
+                    <span>
+                        <i class="fas fa-calendar-alt"></i>
+                        Triwulan II
+                    </span>
+
+                    <span>
+                        BEM
+                    </span>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+     <!-- =====================================================
+         TRIWULAN III
+    ====================================================== -->
+
+    <section class="quarter-section">
+
+
+        <div class="quarter-heading reveal">
+
+            <span class="quarter-label">
+                PERIODE 03
+            </span>
+
+            <h2>
+                Triwulan IV
+            </h2>
+
+            <p>
+                Juli - September
+            </p>
+			<p>
+                Segera Hadir.
+            </p>
+
+        </div>
+
+
+    <!-- =====================================================
+         TRIWULAN IV
+    ====================================================== -->
+
+    <section class="quarter-section">
+
+
+        <div class="quarter-heading reveal">
+
+            <span class="quarter-label">
+                PERIODE 04
+            </span>
+
+            <h2>
+                Triwulan IV
+            </h2>
+
+            <p>
+                Oktober - Desember
+            </p>
+			<p>
+                Segera Hadir.
+            </p>
+
+        </div>
+
+
+
+    <!-- =====================================================
+         CTA - KIRIM ASPIRASI
+    ====================================================== -->
+
+    <section class="aspirasi-cta reveal">
+
+        <div class="aspirasi-cta-content">
+
+
+            <span class="aspirasi-cta-label">
+
+                RUANG UNTUK SUARAMU
+
+            </span>
+
+
+            <h2>
+
+                Punya Kritik,
+                Saran, atau Aspirasi?
+
+            </h2>
+
+
+            <p>
+
+                Jangan ragu untuk menyampaikan suara kamu.
+                Aspirasi dapat disampaikan melalui email resmi Dewan Legislatif Mahasiswa.
+                Sampaikan apa yang ingin kamu suarakan,
+                dan biarkan DLM mengkajinya.
+
+            </p>
+
+
+            <!--
+                Gmail Compose.
+                Email tujuan:
+                dlm.pkj3@gmail.com
+
+                -->
+
+            <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=dlm.pkj3@gmail.com&su=Aspirasi%20Mahasiswa%20DLM"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="anonymous-button"
+            >
+
+                <i class="fas fa-paper-plane"></i>
+
+                Sampaikan Aspirasimu kepada Kami.
+
+            </a>
+
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
+
+<footer>
+
+    <div class="footer-content">
+
+
+        <!-- ORGANISASI -->
+
+        <div class="footer-org">
+
+
+            <div class="footer-logo">
+
+                <img
+                    src="LOGO.PNG"
+                    alt="Logo DLM"
+                >
+
+
+                <div>
+
+                    <strong>
+                        DLM PKJ III
+                    </strong>
+
+                    <span>
+                        Dewan Legislatif Mahasiswa
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <p>
+
+                Dewan Legislatif Mahasiswa
+                Poltekkes Kemenkes Jakarta III.
+
+            </p>
+
+
+            <small>
+
+                &copy; 2026 DLM Poltekkes Kemenkes Jakarta III.
+                All Rights Reserved.
+
+            </small>
+
+        </div>
+
+
+
+        <!-- NAVIGASI -->
+
+        <div class="footer-links">
+
+            <h4>
+                Navigasi
+            </h4>
+
+
+            <a href="index.html">
+                Beranda
+            </a>
+
+
+            <a href="BPH.html">
+                Tentang Kami
+            </a>
+
+
+            <a href="produk hukum.html">
+                Produk Hukum
+            </a>
+
+
+            <a href="berita.html">
+                Berita
+            </a>
+
+
+            <a href="aspirasi.html">
+                Aspirasi
+            </a>
+
+        </div>
+
+
+
+        <!-- SOCIAL MEDIA -->
+
+        <div class="footer-social-section">
+
+            <h4>
+                Ikuti Kami
+            </h4>
+
+
+            <div class="footer-social">
+
+
+                <a
+                    href="https://instagram.com/dlmpkj3"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="footer-icon"
+                    title="Instagram"
+                >
+
+                    <i class="fab fa-instagram"></i>
+
+                </a>
+
+
+                <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=dlm.pkj3@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="footer-icon"
+                    title="Email"
+                >
+
+                    <i class="fas fa-envelope"></i>
+
+                </a>
+
+
+                <a
+                    href="https://youtube.com/@dlmpkj3115"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="footer-icon"
+                    title="YouTube"
+                >
+
+                    <i class="fab fa-youtube"></i>
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     LIGHTBOX
+====================================================== -->
+
+<div
+    class="aspirasi-lightbox"
+    id="aspirasiLightbox"
+>
+
+
+    <button
+        class="lightbox-close"
+        onclick="closeAspirasiImage()"
+        aria-label="Tutup gambar"
+    >
+
+        <i class="fas fa-times"></i>
+
+    </button>
+
+
+    <img
+        id="aspirasiLightboxImage"
+        src=""
+        alt="Preview hasil aspirasi"
+    >
+
+</div>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script src="script.js"></script>
+
+
+<script>
+
+    /* =========================================
+       LIGHTBOX ASPIRASI
+    ========================================= */
+
+    function openAspirasiImage(element) {
+
+        const image =
+            element.querySelector("img");
+
+        const lightbox =
+            document.getElementById(
+                "aspirasiLightbox"
+            );
+
+        const lightboxImage =
+            document.getElementById(
+                "aspirasiLightboxImage"
+            );
+
+
+        if (!image) return;
+
+
+        lightboxImage.src =
+            image.src;
+
+        lightboxImage.alt =
+            image.alt;
+
+        lightbox.classList.add(
+            "active"
+        );
+
+
+        document.body.style.overflow =
+            "hidden";
+
+    }
+
+
+
+    function closeAspirasiImage() {
+
+        const lightbox =
+            document.getElementById(
+                "aspirasiLightbox"
+            );
+
+
+        lightbox.classList.remove(
+            "active"
+        );
+
+
+        document.body.style.overflow =
+            "";
+
+    }
+
+
+
+    /* =========================================
+       CLICK DI LUAR GAMBAR
+    ========================================= */
+
+    document
+        .getElementById("aspirasiLightbox")
+        .addEventListener(
+            "click",
+            function(event) {
+
+                if (
+                    event.target === this
+                ) {
+
+                    closeAspirasiImage();
+
+                }
+
+            }
+        );
+
+
+
+    /* =========================================
+       ESC UNTUK MENUTUP LIGHTBOX
+    ========================================= */
+
+    document.addEventListener(
+        "keydown",
+        function(event) {
+
+            if (
+                event.key === "Escape"
+            ) {
+
+                closeAspirasiImage();
+
+            }
+
+        }
+    );
+
+</script>
+
+
+</body>
+
+</html>
